@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hero Section</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="node.js"></script>
     <script
       src="https://kit.fontawesome.com/028465adf0.js"
       crossorigin="anonymous"
@@ -24,9 +25,38 @@
         <a href="#" class="nav__link--hover">Contact Us</a>
         <a href="#" class="nav__link--hover">Login</a>
         <button class="signup-button">Sign Up</button>
-      </nav>
+      
     </header>
-
+    <button class="btn__menu" onclick="openMenu()">
+      <i class="fas fa-bars"></i>
+  </button>
+  <div class="menu__backdrop">
+      <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+          <i class="fas fa-times"></i>
+      </button>
+      <ul class="menu__links">
+          <li class="menu__list">
+              <a class="menu__link no-cursor" onclick="closeMenu()">About</a>
+          </li>
+          <li class="menu__list">
+              <a class="menu__link no-cursor" onclick="closeMenu()">Blog</a>
+          </li>
+          <li class="menu__list">
+              <a class="menu__link no-cursor" onclick="closeMenu()">Pricing</a>
+          </li>
+          <li class="menu__list">
+            <a class="menu__link no-cursor" onclick="closeMenu()">Contact Us</a>
+        </li>
+        <li class="menu__list">
+          <a class="menu__link no-cursor" onclick="closeMenu()">Login</a>
+      </li>
+      <li class=  "menu__list">
+        <button class="signup-button" onclick="closeMenu()"><span class="signup-button">Sign Up</span></button>
+      </li>
+      </ul>
+  </div>
+</div>
+</nav>
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="hero-content">
@@ -67,74 +97,90 @@
       </p>
       <div class="features-grid">
         <div class="feature-item">
+          <figure class="feature__img--wrapper">
           <img
             src="https://treact.owaiskhan.me/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg"
-            alt=""
-          />
-          <h3 class="feature-title">Secure</h3>
-          <p>
+            alt="secure__img" class="feature__img">
+          </figure>
+          <div class="features__text">
+          <h3 class="feature__subtitle">
+            Secure
+          </h3>
+          <p class="features__description">
             We strictly only deal with vendors that provide top notch security.
           </p>
+ </div>
        </div>
+
         <div class="feature-item">
+          <figure class="feature__img--wrapper">
           <img
             src="https://treact.owaiskhan.me/static/media/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg"
-            alt=""
+            alt="" class="feature__img"
           />
-        
-          <h3 class="feature-title">24/7 Support</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Reprehenderit voluptatibus illo cumque facere incidunt beatae?
+        </figure>
+        <div class="features__text">
+          <h3 class="feature__subtitle">24/7 Support</h3>
+          <p class="features__description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing.
           </p>
         </div>
+        </div>
         <div class="feature-item">
+          <figure class="feature__img--wrapper">
           <img
             src="https://treact.owaiskhan.me/static/media/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg"
-            alt=""
+            alt="" class="feature__img"
           />
-         
-          <h3 class="feature-title">Customizable</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex officia
-            est doloribus cupiditate, sequi qui?
+        </figure>
+         <div class="features__text">
+          <h3 class="feature__subtitle">Customizable</h3>
+          <p class="features__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing.
           </p>
         </div>
+        </div>
         <div class="feature-item">
+          <figure class="feature__img--wrapper">
           <img
             src="https://treact.owaiskhan.me/static/media/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg"
-            alt=""
+            alt="" class="feature__img"
           />
-          
-          <h3 class="feature-title">Reliable</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sit
-            reiciendis nobis modi cumque corrupti.
+        </figure>
+        <div class="features__text">
+          <h3 class="feature__subtitle">Reliable</h3>
+          <p class="features__description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing.
           </p>
         </div>
+        </div>
         <div class="feature-item">
+          <figure class="feature__img--wrapper">
           <img
             src="https://treact.owaiskhan.me/static/media/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg"
-            alt=""
+            alt="" class="feature__img"
           />
-         
-          <h3 class="feature-title">Fast</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            blanditiis minus velit, sed laboriosam saepe?
+        </figure>
+        <div class="features__text">
+          <h3 class="feature__subtitle">Fast</h3>
+          <p class="features__description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing.
           </p>
         </div>
+        </div>
         <div class="feature-item">
+          <figure class="feature__img--wrapper">
           <img
             src="https://treact.owaiskhan.me/static/media/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg"
-            alt=""
+            alt="" class="feature__img"
           />
-         
-          <h3 class="feature-title">Easy</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            facilis eveniet voluptas placeat voluptates quos!
+        </figure>
+        <div class="features__text">
+          <h3 class="feature__subtitle">Easy</h3>
+          <p class="features__description">
+           Lorem ipsum dolor sit amet consectetur adipisicing.
           </p>
+        </div>
         </div>
       </div>
     </section>
