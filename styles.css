@@ -820,38 +820,234 @@ line-height: 3;
   
 }
 
-@media(max-width: 720px){
+@media(max-width: 768px){
   .navbar-links, .developer{
     display: none;
   }
   .btn__menu{
     display: block;
   }
+  .highlight{
+    width: 100%;
+  }
+  .highlight:not(:last-child){
+    margin-bottom: 24px;
+  }
   .signup-button{
     display: block;
   }
-  .features-grid, .quality, .steps__content, .footer {
-    width: 100%;
-    margin-bottom: 24px;
-    display: flex;
+  .hero-section{
     flex-direction: column;
     align-items: center;
-  
+
   }
-  .steps, .pricing-table{
+  .hero-content{
+    width: 80%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-content h1{
+    width: 560px;
+    font-size: 32px;
+  }
+  .hero-content-para{
+    width: 560px;
+  }
+  .trusted-customers{
+    margin-top: 60px;
     align-items: center;
     
   }
- .design__img {
-    margin-top: 30%;
-    margin-left: 10px;
-   
+  .trusted-title{
+    align-items: center;
+    padding-left: 200px;
+    
   }
 
-}
+  .customer-logos{
+    width: 600px;
+    justify-content: center;
+  }
+
+  .features-grid{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .feature-item{
+    margin: 0 16px;
+    width: 60%;
+  }
+  /*.design{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;*/
+    
+   .design{
+    display: flex;
+    flex-direction: column-reverse;
+    
+   }
+   .design__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+  }
+  .design__img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+   width: 60%;
+  }
+  
+  .quality{
+  
+    align-items: center;
+    justify-content: center;
+    
+  
+    
+  }
+  .design__title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    width: 560px;
+    
+   
+  }
+  .design__description{
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px;
+  }
+  .learn__more{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .steps{
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  .step__img{
+    width: 80%;
+  }
+  .steps__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+  }
+  .steps__title{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 36px;
+   
+  }
+  .number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .number__header{
+    font-weight: 600;
+    letter-spacing: none;
+
+
+  }
+  .number__description{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-right: 70px;
+    font-size: 14px;
+    width: 350px;
+    font-weight: 200;
+  }
+  .values{
+    display: flex;
+    flex-direction: column-reverse;
+   
+  }
+  .value__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .value__img{
+    margin-top: 48px;
+    width: 100%;
+
+  }
+  .values__title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+    font-size: 36px;
+    max-width: 560px;
+   
+  }
+  .value__description{
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px;
+  }
+  .a__p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .a__p--header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .afford__description {
+    width: 560px;
+  }
+  .pricing-table{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .category_container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+   
+  }
+  .footer_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .footer_text{
+    margin-bottom: 30px;
+  }
+  .copyright{
+    margin-bottom: 30px;
+  }
+
+
+  
+  
+
+
 @media(min-width: 720px){
   .btn__menu{
     display: none;
